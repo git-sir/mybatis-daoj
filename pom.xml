@@ -191,6 +191,15 @@
                 </executions>
             </plugin>
 
+            <!--打包时(例如package命令)不要执行test目录下的测试用例-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
             <!-- 以命令行方式执行jar中的Main方法 -->
             <!--
             <plugin>

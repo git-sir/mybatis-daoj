@@ -22,7 +22,6 @@
         <!-- 设定生成后的DAO接口所在的包 -->
         <property name="daoPackage" value="com.kailin.demo.dao"/>
 
-
         <!-- 设定代码生成的输出目录, 支持相对路径或绝对路径 -->
         <property name="outputDirc" value="generated-files"/>
 
