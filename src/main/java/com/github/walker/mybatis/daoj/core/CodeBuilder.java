@@ -117,10 +117,12 @@ class CodeBuilder {
         StringBuffer buff = new StringBuffer();
 
         buff.append("package ");
-        buff.append(daoPackageName + "; \n\n");
+        buff.append(daoPackageName + ";\n\n");
 
-        buff.append("import " + basicDaoName + "; \n\n");
-
+        buff.append("import " + basicDaoName + ";\n");
+        buff.append("import org.apache.ibatis.annotations.Mapper" + ";\n\n");
+        // public class AA {
+        buff.append("@Mapper"+ "\n");
         // public class AA {
         buff.append("public interface ");
         buff.append(MappingUtil.getEntityName(tableName) + "Dao");

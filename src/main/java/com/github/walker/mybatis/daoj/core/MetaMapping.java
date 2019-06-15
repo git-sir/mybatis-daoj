@@ -163,11 +163,11 @@ class MetaMapping {
                 return String.class;
 
             case Types.DATE:
-                return java.sql.Date.class;
+                return java.util.Date.class;
             case Types.TIME:
-                return java.sql.Time.class;
+                return java.util.Date.class;
             case Types.TIMESTAMP:
-                return java.sql.Timestamp.class;
+                return java.util.Date.class;
 
             case Types.BINARY:
                 return byte[].class;
